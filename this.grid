@@ -1,0 +1,17 @@
+    if (!noDelay) await this.pausableTimeout(300);
+    
+    candiesToSmash.forEach(candy => candy.remove());
+    
+    await this.dropCandies(noDelay);
+    await this.fillBoard(false, noDelay);
+    
+    await this.processMatches(false, null, noDelay);
+}
+
+async activateRainbowPowerup(rainbowCandy, otherCandy, noDelay = false) {
+    const targetType = otherCandy.dataset.type;
+    const candiesToRemove = new Set();
+    candiesToRemove.add(rainbowCandy);
+
+isValid(row, col) {
+

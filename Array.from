@@ -1,0 +1,5 @@
+async processMatches(isInitializing = false, swappedCandies = null, noDelay = false) {
+    const matchGroups = this.findMatchGroups();
+
+    if (matchGroups.length === 0) {
+

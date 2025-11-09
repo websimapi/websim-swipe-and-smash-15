@@ -1,0 +1,8 @@
+    if (noDelay) return Promise.resolve();
+    playSound('nice_swipe.mp3');
+    recorder.recordSound('nice_swipe.mp3');
+    return this.pausableTimeout(300);
+}
+
+getAffectedCandies(powerupCandy) {
+
